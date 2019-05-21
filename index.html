@@ -3,242 +3,192 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ABOUT ME</title>
-	<link rel="stylesheet" href="css/aboutme.css"><!--css file-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><!--bootstrap cdn-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>FAB ART</title>
+     <link rel="stylesheet" href="../dist/css/lightbox.min.css">
+	  <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+   <link rel="stylesheet" href="../css/lightbox.min.css"> <!--lightbox-->
+	<link rel="stylesheet" href="css/fabart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="js/fabart.js"></script>
+   <script src="../js/lightbox-plus-jquery.min.js"></script> <!--lightbox-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-
-      <div class="col-lg-2">
-        <div id="x" >
-          <nav class="navbar navbar-expand-md navbar-dark  fixed-top na">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#aboutme">ABOUT ME</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skill">SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
-                <li class="nav-item"><a class="nav-link" href="#interest">INTEREST</a></li> 
-                <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>  
-                <li class="nav-item"><a class="nav-link" href="#awards">AWARDS AND CERTIFICATIONS</a></li> 
-                <li class="nav-item"><a class="nav-link" href="#family">FAMILY</a></li>  
-              </ul>
-            </div>  
-          </nav>
+  <div class="modal fade " id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Welcome to my Gallery</h4>
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
-        <div class="sidenav" id="y">
-          <img id ="dp" src="images/dp.jpg" alt="dp"/><br><br>
-          <a href="#aboutme" class="n">ABOUT ME</a>
-          <a href="#skill" class="n">SKILLS</a>
-          <a href="#education" class="n">EDUCATION</a>
-          <a href="#interest" class="n">INTEREST</a>
-          <a href="#experience" class="n">EXPERIENCE</a>
-          <a href="#awards" class="n">AWARDS AND CERTIFICATIONS</a>
-          <a href="#family" class="n">FAMILY AND FRIENDS</a>
+        <div class="modal-body">
+          <img src="eee/modal.jpeg" alt="" id="m"/>  
         </div>
       </div>
-
-      <div class="right  col-lg-10">
-
-        <div id="aboutme">
-          <h1>RAGINI GAURAV</h1>
-          <h6>student, manipal university jaipur<br>sushila sadan sanjay nagar road no.2,patna,bihar<br>7033681262<br>ragini.gaurav.70336@gmail.com</h6>
-        </div>
-
-        <div id="skill">
-          <h1>SKILLS</h1>
-          <table>
-            <tr>
-              <td>HTML</td>
-              <td> <div class="progress"><div class="progress-bar  progress-bar-striped" style="width:100%">100%</div></div></td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:100%">100%</div></div></td>
-            </tr>
-            <tr>
-              <td>JAVASCRIPT</td>
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:70%">80%</div></div></td>
-            </tr>
-            <tr> 
-              <td>PHP</td> 
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:60%">60%</div> </div></td>
-            </tr>
-            <tr>
-              <td>MYSQL</td>
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:70%">70%</div></div></td>
-            </tr>
-            <tr>
-              <td>JAVA</td>
-              <td><div class="progress"> <div class="progress-bar  progress-bar-striped" style="width:70%">70%</div></div></td>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:80%">80%</div></div></td>
-            </tr>
-             <tr>
-              <td>BOOTSTRAP</td>
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:80%">80%</div></div></td>
-            </tr>    
-            <tr>
-              <td>C++</td>
-              <td><div class="progress"><div class="progress-bar  progress-bar-striped" style="width:70%">70%</div></div></td>
-            </tr>
-          </table>
-        </div>
-
-        <div id="education">
-          <h1> EDUCATION</h1>
-          <div class="container">
-            <div class="row">
-              <div class="text col-lg-5 col-sm-12">
-                <ul>
-                  <li><h5>SECONDARY EDUCATION(10th)</h5>St. Karens high School,CBSE BOARD<br>passed in year 2014 <br>scored 10 cgpa</li>
-                  <li><h5>SENIOR SECONDARY EDUCATION (12th)</h5>Satyam International School,CBSE BOARD<br>passed in year 2016 <br>scored 88.6%</li>
-                  <li><h5>BACHELOR OF TECHNOLOGY(BTech)</h5>Manipal University Jaipur<br>currently studing <br> scored cgpa 9.66</li>
-                </ul>
-              </div>
-         
-              <div class=" map col-lg-3 col-sm-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5069954289056!2d85.05472475003097!3d25.62129358362062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5657280ed745%3A0x31550fb5c288975a!2sSt.+Karen&#39;s+High+School!5e0!3m2!1sen!2sin!4v1558288925718!5m2!1sen!2sin" width="250" height="200" style="border:0" allowfullscreen></iframe><br><br><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.602667984195!2d85.17966235002919!3d25.551608883652765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a73101615ae5%3A0x2f80918aa3a65c10!2sSatyam+International+Abdullah+Chak!5e0!3m2!1sen!2sin!4v1558289055780!5m2!1sen!2sin" width="250" height="200" style="border:0" allowfullscreen></iframe><br><br><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8772837132983!2d75.56304025006227!3d26.84385518307465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e05bee9b%3A0x1b8d67402d4eb863!2sManipal+University+Jaipur!5e0!3m2!1sen!2sin!4v1558289126941!5m2!1sen!2sin" width="250" height="200" style="border:0" allowfullscreen></iframe>
-              </div>
-
-              <div class="A col-lg-3 col-sm-6">
-                <div >
-                  <img src="images/1.jpg" alt="photo" class="photosA" id="samplePhoto1" />
-                  <img src="images/2.jpg" alt="photo" class="photosA" id="samplePhoto2" />
-                  <img src="images/3.jpg" alt="photo" class="photosA" id="samplePhoto3" />
-                </div><br><br><br><br><br><br><br><br><br><br>
-                <div >
-                  <img src="images/4.jpeg" alt="photo" class="photosB" id="samplePhoto4" />
-                  <img src="images/5.jpg" alt="photo" class="photosB" id="samplePhoto5" />
-                  <img src="images/6.jpg" alt="photo" class="photosB" id="samplePhoto6" />
-                </div><br><br><br><br><br><br><br><br><br><br>
-                <div >
-                  <img src="images/9.jpg" alt="photo" class="photosC" id="samplePhoto9" />
-                  <img src="images/8.jpg" alt="photo" class="photosC" id="samplePhoto8" />
-                  <img src="images/7.jpg" alt="photo" class="photosC" id="samplePhoto7" />
-                </div>
-              </div>
-
-            </div>
-          </div><!--FOR inner container-->
-        </div><!--education-->
-
-        <div id="interest">
-          <h1>INTERESTS</h1>
-          <ul>
-            <li>volunteer work.</li>
-            <li>blog writing.</li>
-            <li>club memberships.</li>
-            <li>traveling, fishing.</li>
-            <li>sports (walking, excercise, running, tennis)</li>
-            <li>reading, writing.</li>
-            <li>art, music (playing, listening)</li>
-            <li>job-related activities.</li>
-          </ul>
-        </div><!--interst ends-->
-
-        <div id="experience">
-          <h1>EXPERIENCE</h1>
-          <h3>WEB DEVELOPER</h3>
-          <h5> INTELITEC SOFGDFG</h5>
-          <h6>egere inermis, eos assum maiestatis ei. Vix cu munere splendide, eu sit lucilius mediocrem. Ne usu verear oblique impedit.
-          Ius te nihEa sea molestie appareat. Dicta insolens sententiae ne vix, ullum assum complectitur eu sit.</h6>
-          <br>
-          <h3> WEB HGJFG FDFD</h3>
-          <h5> SHOUIA FDFGPR ODUCTIONS</h5>
-          <h6>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</h6>
-          <br>
-          <h3> WEB DESIGN INTERN</h3>
-          <h5> SHOUT! MEDIA PRODUCTIONS</h5>
-          <h6>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</h6>
-          <br>
-          <h3> INTERN</h3>
-          <h5> SHFDGA TER RTUCFS</h5>
-          <h6>Graeci persecuti elaboraret ea qui. Vix illud putent accusata ei, id sed nibh prima iracundia, ornatus molestie conclusionemque eos eu. Nam graece nostrud atomorum ad. Justo neglegentur eu pro, an agam delenit postulant his, ne vis nullam corrumpit consectetuer. Suas ferri tantas duo in, legimus persequeris at sea.</h6>
-        </div>
-
-        <div id="awards">
-          <h1>AWARDS AND CERTIFICATIONS</h1>
-          <p><i class="fas fa-award yellow"></i>&nbsp; Introduction to HTML5 by University of Michigan on Coursera. Certificate earned at Thursday, March 7,2019 &nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/GSZGZEAE9SLW"><i class="far fa-eye green"></i></a></p>
-          <p><i class="fas fa-award yellow"></i>&nbsp; Introduction to CSS3 by University of Michigan on Coursera. Certificate earned at Tuesday, March 12,2019 &nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/BNAEGRW44RP2"><i class="far fa-eye green"></i></a></p>
-          <p><i class="fas fa-award yellow"></i>&nbsp; Interactivity with JavaScript by University of Michigan on Coursera. Certificate earned at Thursday, March 14,2019 &nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/SS7PVBCBAVQM"><i class="far fa-eye green"></i></a></p>
-          <p><i class="fas fa-award yellow"></i>&nbsp; Advanced Styling with Responsive Design by University of Michigan Certificate earned at Saturday,March 23,2019 &nbsp;<a href="https://www.coursera.org/account/accomplishments/certificate/4TQ5ZH3Q23MM"><i class="far fa-eye  green"></i></a></p>
-          <p><i class="fas fa-award yellow"></i>&nbsp; Ius te nihil mnesarchum adversarium. Ad quidam bonorum mei, summo tibique epicuri ut mea. Eos ne illum labitur, duo </p>
-           <p><i class="fas fa-award yellow"></i>&nbsp; Ius te nihil mnesarchum adversarium. Ad quidam bonorum mei, summo tibique epicuri ut mea. Eos ne illum labitur, duo </p>
-        </div>
-
-        <div id="family">
-          <h1>FAMILY AND FRIENDS</h1>
-          <p>J’ai quatre frères et deux sœurs.<br>
-          Mon père est commerçant et ma mère est femme au foyer. Ma mère était professeur il y a trente ans, mais elle a quitté son travail à cause de mauvaise santé.<br>
-          Ma famille habite au nord de grande terre Nouvelle-Guinée, mais mon autre frère et moi, nous habitons au sud.<br>
-          Notre ville est au nord, à côté de la mer – elle est très jolie. Il y a beaucoup de plages de sable et on peut y faire du surf.</p> 
-          <div class="scroll">
-            <img src="images/a.jpg" alt="photo" data-toggle="popover" title="bhangarh trip with college friends"/>
-            <img src="images/b.jpg" alt="photo"  data-toggle="popover" title="its me"/>
-            <img src="images/c.jpg" alt="photo" data-toggle="popover" title="with cousions"/>
-            <img src="images/d.jpg" alt="photo"  data-toggle="popover" title="its me"/>
-            <img src="images/e.jpg" alt="photo"  data-toggle="popover" title="me again"/>
-            <img src="images/f.jpg" alt="photo" data-toggle="popover" title="movie time"/>
-            <img src="images/g.jpg" alt="photo"  data-toggle="popover" title="hostel tympass"/>
-            <img src="images/h.jpg" alt="photo"  data-toggle="popover" title="pretty sister"/>
-            <img src="images/i.jpg" alt="photo" data-toggle="popover" title="siblings"/>
-            <img src="images/j.jpg" alt="photo" data-toggle="popover" title="sister"/>
-            <img src="images/k.jpeg" alt="photo" data-toggle="popover" title="exact same"/>
-            <img src="images/l.jpg" alt="photo" data-toggle="popover" title="diwali with brothers"/>
-            <img src="images/m.jpg" alt="photo" data-toggle="popover" title="mumma"/>
-            <img src="images/n.jpg" alt="photo" data-toggle="popover" title="sister time"/>
-          </div>  
-        </div>
-  
-        <div id="footer">
-          <h3>REFERENCES</h3>
-          <ul>
-            <li><a href="https://fontawesome.com/">https://fontawesome.com/</a></li>
-            <li><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
-            <li><a href="http://startbootstrap.com/">http://startbootstrap.com/</a></li>
-            <li><a href="http://www.sitepoint.com/responsive-web-design-tips-bootstrap-css">
-                 http://www.sitepoint.com/responsive-web-design-tips-bootstrap-css</a></li>
-          </ul>  
-        </div>
-        <div id="more"><h5>THANK U fOR VISITING!!!!!!!</h5></div>
-      </div>
-
     </div>
   </div>
 
-  <div class="icon-bar ">
-    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a> 
-    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> 
-    <a href="#" class="google"><i class="fab fa-google"></i></a> 
-    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-    <a href="#" class="github"><i class="fab fa-github"></i></a>
+  <div id="demo" class="carousel slide" data-ride="carousel"  data-interval="false">
+			  <ul class="carousel-indicators">
+			    <li data-target="#demo" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo" data-slide-to="1"></li>
+			    <li data-target="#demo" data-slide-to="2"></li>
+			  </ul>
+
+			  <!-- The slideshow -->
+			  <div class="carousel-inner" >
+			    <div class="carousel-item active">
+			      <img class="img-responsive" src="eee/a.jpg" alt="pic"/>
+			      <div class="carousel-caption"> <h1 >FAB ART</h1>
+      				 <p>“We don’t make mistakes, just happy little accidents”</p></div>
+			    </div>
+
+			    <div class="carousel-item">
+			    	  
+			      <img class="image-fluid" src="eee/b.jpg" alt="pic2"/>
+			      <div class="carousel-caption"> <h1 >FAB ART</h1>
+      				 <p>“We don’t make mistakes, just happy little accidents”</p></div>
+			    </div>dwed
+
+			    <div class="carousel-item">
+                     
+			      <img class="image-fluid" src="eee/c.jpg" alt="pic3"/>
+			      <div class="carousel-caption"> <h1 >FAB ART</h1>
+      				 <p>“We don’t make mistakes, just happy little accidents”</p></div>
+			    </div>
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a>
   </div>
 
+  <nav class="navbar navbar-expand-sm  bg-success navbar-dark sticky-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+		          <li class="nav-item"><a class="nav-link" href="fabart.html">HOME</a></li>
+              <li class="nav-item">
+             		<div class="btn-group">
+             			<button type="button" class="btn btn-primary dropdown-toggle btn-success" data-toggle="dropdown">ARTWORK </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" id="A" onclick="f1(this)">Sketches</a>
+                    <a class="dropdown-item" href="#" id="B" onclick="f1(this)">Painting</a>
+                    <a class="dropdown-item" href="#" id="C" onclick="f1(this)">calligraphy</a>
+                    <a class="dropdown-item" href="#" id="D" onclick="f1(this)">craft</a>
+                    <a class="dropdown-item" href="#" id="E" onclick="f1(this)">all</a>
+                  </div>
+         			  </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#contact">CONTACT ME</a></li>    
+            </ul>
+         </div>  
+  </nav>
 
-  <div class="bottom">
-    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a> 
-    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> 
-    <a href="#" class="google"><i class="fab fa-google"></i></a> 
-    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-    <a href="#" class="github"><i class="fab fa-github"></i></a>
+  <div class="images">  
+      <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/1.jpg"  alt="image"/>
+	    <img class=" c img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/2.jpg"  alt="image"/>
+	    <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/3.jpg"  alt="image"/>
+	    <img class=" s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2 "  src="eee/4.jpg"  alt="image"/>
+      <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/5.jpg"  alt="image"/> 
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/6.jpg"  alt="image"/>  
+	    <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/7.jpg"  alt="image"/>   
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/8.jpg"  alt="image"/>  
+	    <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/9.jpeg"  alt="image"/> 
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/10.jpg"  alt="image"/>  
+	    <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/11.jpg"  alt="image"/>    
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/12.jpg"  alt="image"/>	
+	    <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/13.jpg"  alt="image"/>    
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/14.jpg"  alt="image" />     	
+	    <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/15.jpg"  alt="image"/>
+	    <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/16.jpg"  alt="image" />	
+	    <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/17.jpg"  alt="image" /> 
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/18.jpg"  alt="image"/>   
+      <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/19.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/20.jpg"  alt="image"/>   
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2 "  src="eee/21.jpg"  alt="image"/>   
+      <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/22.jpg"  alt="image"/> 
+      <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/31.jpg"  alt="image" />       
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/32.jpg"  alt="image"/> 
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/23.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/24.jpeg"  alt="image"/>  
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/25.jpg"  alt="image"/>
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/26.jpg"  alt="image"/>
+      <img class="c img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/27.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/28.jpg"  alt="image"/>    
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/29.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/30.jpg"  alt="image"/> 
   </div>
+
+  <div  id="contact" >
+    <div id="a">
+      <h1>CONTACT ME</h1> 
+      <div>
+  		  <p><i class="fas fa-mobile-alt"></i> 7033681262</p>
+  		  <p><i class="fas fa-envelope fa"></i> ragini.gaurav.70336@gmail.com</p>
+  		  <p><i class="fab fa-linkedin"></i> linkedin.com/in/ragini-gaurav-a13701178</p>
+  		  <p><i class="fab fa-instagram"></i>instagram.com/gauravragini/</p>
+      </div>
+    </div>
+    <div id="b">
+      <button class="collapsible">CONTACT ME</button>
+      <div class="content">
+        <div>
+    		 <p><i class="fas fa-mobile-alt"></i> 7033681262</p>
+    		 <p><i class="fas fa-envelope fa"></i> ragini.gaurav.70336@gmail.com</p>
+    		 <p><i class="fab fa-linkedin"></i> linkedin.com/in/ragini-gaurav-a13701178</p>
+    		 <p><i class="fab fa-instagram"></i>instagram.com/gauravragini/</p>
+  		  </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="more"><h5><a href="aboutme.html">KNOW MORE ABOUT ME</a></h5></div>
+
+  <script>
+    $(window).on('load',function(){
+      $("#myModal").modal();
+      // console.log("hi");
+    });
+  </script>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
