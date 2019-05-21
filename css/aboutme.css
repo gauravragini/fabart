@@ -1,0 +1,151 @@
+body {background-image: url("../images/bg.jpg");background-color: #cccccc; padding-right:0.5%;}
+
+#dp{width:80%; height: 39%;border-radius: 50%;border:5px solid white;}
+.right{align-content: center;}
+
+#skill h1,#education h1,#experience h1,#family h1,#awards h1,#interest h1
+ {
+  text-align: center;
+  margin-top: 10%;
+  color: #0a6344;
+  border-color: white;
+  background-color: #b7f4de;
+  margin-bottom: 5%;
+  font-size: 200%;
+  font-family:"cooper black";
+ }
+
+.sidenav
+ {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #420925;
+  overflow-x: hidden;
+  padding-top: 70px;
+  text-align: center;
+  vertical-align: middle;
+ }
+.sidenav a 
+ {
+  padding: 4px 6px 4px 14px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181; 
+  display: block;
+ }
+.sidenav a:hover,#x a:hover {background-color: #eddaa3;color: #420925;}
+.sidenav a:active{color: #1e1335;background-color:#FFFFFF;}
+
+#aboutme h1
+ {
+  margin-bottom: 3%;
+  margin-top: 3%;
+  text-align: center; 
+  font-size: 8vw;
+  font-family: "arial";
+  color: #420925 ;
+  text-shadow: 10px 10px 10px #000;
+ }
+#aboutme h6{text-align: right;color: #2b0606;margin-bottom: 0;}
+
+
+#skill table{ width:60%; margin: auto;margin-bottom: 3%; margin-top: 5%;}
+#skill tr td:nth-child(2){ width:90%; }
+#skill td{ font-family:arial, impact;}
+
+
+#education{text-align: center;font-size: 120%;font-family:times new roman,cuckoo;}
+.photosA,.photosB,.photosC{border: 10px solid #FFF;}
+#education .text li {margin-bottom:35%;font-family:cursive;}
+#education .text li h5{font-family: cooper black;text-decoration-line: underline;}
+#samplePhoto1,#samplePhoto4,#samplePhoto9{transform:rotate(-10deg);position: absolute;}
+#samplePhoto1:hover,#samplePhoto4:hover,#samplePhoto7:hover{z-index: 10;}
+#samplePhoto2,#samplePhoto5,#samplePhoto8{transform:rotate(10deg);position: absolute;}
+#samplePhoto2:hover,#samplePhoto5:hover,#samplePhoto8:hover{z-index: 10;}
+#samplePhoto3,#samplePhoto6,#samplePhoto7{position: absolute;}
+
+#interest ul
+{list-style-type: none;text-align: center;font-size: 130%;font-family:cursive,arial;}
+
+#experience h3{font-family: arial;color:#220c63;}
+#experience h5{font-family: impact;color:#186363;}
+#experience h6{font-family: courier,arial;color:#032121;text-align: justify;}
+
+
+.green{font-size:80%;color:green;}
+.yellow{font-size: 120%;color: #f9b22c;}
+
+#family p{font-size:110%; font-family:cursive,arial; text-align: justify;}
+.scroll
+ {
+  margin: 5vh;
+  width: 100%;
+  white-space: nowrap; 
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+ }
+.scroll img{height: 25vh;}
+
+#footer{background-color:#bdd0ef;padding:3%;color: #fff; margin-bottom:5%; margin-top: 10%; }
+#footer h3,h5{text-align: center;}
+#footer a{font-size: 120%;font-family:arial,impact;color:#000;}
+#footer ul{list-style-type:none;}
+
+#more{background-color:#000; text-align:center;padding:1%;margin:1%;margin-bottom: 10%; color: #fff;}
+
+.icon-bar 
+ {
+  position: fixed;
+  top: 50%;
+  right: 0;z-index:20;
+  margin:0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ }
+.icon-bar a,.bottom a
+ {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 100%;
+ }
+.icon-bar a:hover {background-color: #000;}
+.facebook { background: #3B5998;color: white;}
+.twitter {background: #55ACEE;color: white;}
+.google { background: #dd4b39;color: white;}
+.linkedin { background: #007bb5;color: white;}
+.youtube {background: #bb0000;color: white;}
+.github{background:#0d012b;color:#fff;}
+
+@media screen and (min-width:974px)
+  {
+    .bottom{display: none;}
+    #x{display: none;}
+
+  }
+
+@media screen and (max-width:974px)
+  { body{width:80vw;}
+    #x button{background-color:#191038; right: 0;}
+    #y{display:none;}
+    #skill table{ width:80%; }
+    .scroll{overflow: auto;}
+    .bottom{display: visible; position: fixed;bottom:0;z-index:20;}
+    .bottom a{display:inline; }
+    .icon-bar{display: none;}
+    .right{width:100%;}
+  }
+@media screen and (max-width:1000px)
+ {
+  #education .text li {margin-bottom:10%;}
+  .A{display: none;}
+    .map{display: none;}
+ }

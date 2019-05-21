@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FAB ART</title>
+     <link rel="stylesheet" href="../dist/css/lightbox.min.css">
+	  <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+   <link rel="stylesheet" href="../css/lightbox.min.css"> <!--lightbox-->
+	<link rel="stylesheet" href="css/fabart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="js/fabart.js"></script>
+   <script src="../js/lightbox-plus-jquery.min.js"></script> <!--lightbox-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="modal fade " id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Welcome to my Gallery</h4>
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          <img src="eee/modal.jpeg" alt="" id="m"/>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="demo" class="carousel slide" data-ride="carousel"  data-interval="false">
+			  <ul class="carousel-indicators">
+			    <li data-target="#demo" data-slide-to="0" class="active"></li>
+			    <li data-target="#demo" data-slide-to="1"></li>
+			    <li data-target="#demo" data-slide-to="2"></li>
+			  </ul>
+
+			  <!-- The slideshow -->
+			  <div class="carousel-inner" >
+			    <div class="carousel-item active">
+			      <img class="img-responsive" src="eee/a.jpg" alt="pic"/>
+			      <div class="carousel-caption"> <h1 >FAB ART</h1>
+      				 <p>“We don’t make mistakes, just happy little accidents”</p></div>
+			    </div>
+
+			    <div class="carousel-item">
+			    	  
+			      <img class="image-fluid" src="eee/b.jpg" alt="pic2"/>
+			      <div class="carousel-caption"> <h1 >FAB ART</h1>
+      				 <p>“We don’t make mistakes, just happy little accidents”</p></div>
+			    </div>dwed
+
+			    <div class="carousel-item">
+                     
+			      <img class="image-fluid" src="eee/c.jpg" alt="pic3"/>
+			      <div class="carousel-caption"> <h1 >FAB ART</h1>
+      				 <p>“We don’t make mistakes, just happy little accidents”</p></div>
+			    </div>
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#demo" data-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </a>
+  </div>
+
+  <nav class="navbar navbar-expand-sm  bg-success navbar-dark sticky-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+		          <li class="nav-item"><a class="nav-link" href="fabart.html">HOME</a></li>
+              <li class="nav-item">
+             		<div class="btn-group">
+             			<button type="button" class="btn btn-primary dropdown-toggle btn-success" data-toggle="dropdown">ARTWORK </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" id="A" onclick="f1(this)">Sketches</a>
+                    <a class="dropdown-item" href="#" id="B" onclick="f1(this)">Painting</a>
+                    <a class="dropdown-item" href="#" id="C" onclick="f1(this)">calligraphy</a>
+                    <a class="dropdown-item" href="#" id="D" onclick="f1(this)">craft</a>
+                    <a class="dropdown-item" href="#" id="E" onclick="f1(this)">all</a>
+                  </div>
+         			  </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#contact">CONTACT ME</a></li>    
+            </ul>
+         </div>  
+  </nav>
+
+  <div class="images">  
+      <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/1.jpg"  alt="image"/>
+	    <img class=" c img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/2.jpg"  alt="image"/>
+	    <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/3.jpg"  alt="image"/>
+	    <img class=" s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2 "  src="eee/4.jpg"  alt="image"/>
+      <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/5.jpg"  alt="image"/> 
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/6.jpg"  alt="image"/>  
+	    <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/7.jpg"  alt="image"/>   
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/8.jpg"  alt="image"/>  
+	    <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/9.jpeg"  alt="image"/> 
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/10.jpg"  alt="image"/>  
+	    <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/11.jpg"  alt="image"/>    
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/12.jpg"  alt="image"/>	
+	    <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/13.jpg"  alt="image"/>    
+	    <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/14.jpg"  alt="image" />     	
+	    <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/15.jpg"  alt="image"/>
+	    <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/16.jpg"  alt="image" />	
+	    <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/17.jpg"  alt="image" /> 
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/18.jpg"  alt="image"/>   
+      <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/19.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/20.jpg"  alt="image"/>   
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2 "  src="eee/21.jpg"  alt="image"/>   
+      <img class=" p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/22.jpg"  alt="image"/> 
+      <img class="ct img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/31.jpg"  alt="image" />       
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/32.jpg"  alt="image"/> 
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/23.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/24.jpeg"  alt="image"/>  
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/25.jpg"  alt="image"/>
+      <img class="s img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/26.jpg"  alt="image"/>
+      <img class="c img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/27.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2"  src="eee/28.jpg"  alt="image"/>    
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/29.jpg"  alt="image"/>
+      <img class="p img-fluid col-xs-6 col-sm-4 col-md-3 col-lg-2" src="eee/30.jpg"  alt="image"/> 
+  </div>
+
+  <div  id="contact" >
+    <div id="a">
+      <h1>CONTACT ME</h1> 
+      <div>
+  		  <p><i class="fas fa-mobile-alt"></i> 7033681262</p>
+  		  <p><i class="fas fa-envelope fa"></i> ragini.gaurav.70336@gmail.com</p>
+  		  <p><i class="fab fa-linkedin"></i> linkedin.com/in/ragini-gaurav-a13701178</p>
+  		  <p><i class="fab fa-instagram"></i>instagram.com/gauravragini/</p>
+      </div>
+    </div>
+    <div id="b">
+      <button class="collapsible">CONTACT ME</button>
+      <div class="content">
+        <div>
+    		 <p><i class="fas fa-mobile-alt"></i> 7033681262</p>
+    		 <p><i class="fas fa-envelope fa"></i> ragini.gaurav.70336@gmail.com</p>
+    		 <p><i class="fab fa-linkedin"></i> linkedin.com/in/ragini-gaurav-a13701178</p>
+    		 <p><i class="fab fa-instagram"></i>instagram.com/gauravragini/</p>
+  		  </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="more"><h5><a href="aboutme.html">KNOW MORE ABOUT ME</a></h5></div>
+
+  <script>
+    $(window).on('load',function(){
+      $("#myModal").modal();
+      // console.log("hi");
+    });
+  </script>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
