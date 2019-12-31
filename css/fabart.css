@@ -23,6 +23,7 @@
   padding: 2%;
   background-color: #b3ffcc;
   display: inline;
+   transition:transform 0.5s;
  }
 
 #a
